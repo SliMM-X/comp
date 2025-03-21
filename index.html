@@ -248,7 +248,7 @@
         <!-- Abstract. -->
         <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+        <!-- <h2 class="title is-3">Abstract</h2> -->
         <div class="twocol">
             <div>
             <div class="content has-text-justified">
@@ -268,7 +268,61 @@
         </div>
         <br>
         <br>
+  <!-- </section> -->
+    
+  <section class="section" id="comp-mm">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+      <h2 class="title is-3">CoMP-MM</h2>
+      <img id="model" width="95%" src="./figs/comp-mm.png">
+    </div>
+    </div>
+      Under the slimilar pre-training data size, <b>CoMP-MM</b> significantly outperforms all other methods and achieves <b>state-of-the-art</b> 
+      performance among open-source models across multiple benchmarks and on both 1B and 7B models.
+  </section>
   
+
+    <section class="section" id="comp-vision">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+        <h2 class="title is-3">CoMP-SigLIP & CoMP-DINOv2</h2>
+        <img id="model" width="95%" src="./figs/comp-vision.png">
+      </div>
+    </div>
+      Our models <b>outperform CLIP, SigLIP and DINOv2</b> by a significant margin. Notably, our <b>CoMP-SigLIP-So400M outperforms AIMv2-H (600M)</b> on most tasks, and our CoMP-DINOv2-L also surpasses DINOv2-G, demonstrating the effectiveness of our method.
+    </section>
+
+    <section class="section" id="method">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+      <div class="column is-15">
+      <h2 class="title is-3">Methods</h2>
+      <div class="content has-text-justified">
+        CoMP builds upon (1) <b>C-RoPE</b>, a Continual Rotary Position Embedding for vision models, which is operated by adding the standard RoPE-2D with the learned 1D position embedding, to support <b>native resolution</b> continual pre-training; (2) <b>Alignment Loss</b>, a cross-entropy loss between visual and textual features through language prototypes, to <b>align multimodal representations</b> between VFMs and LMMs. 
+      </div>
+      
+      <div class="twocol">
+          <div>
+          <p>
+            (1) C-RoPE
+          </p>
+          <img id="model" width="70%" src="./figs/crope.png">
+          </div>
+
+          <div>
+          <p>
+           (2) Alignment Loss
+          </p>
+
+          <img id="model" width="70%" src="./figs/alg.png">
+        </div>
+          
+      </div>
+      </div>
+      </div>
+    </section>
+      
 
     <section class="section" id="BibTeX">
       <div class="container is-max-desktop content">
@@ -283,7 +337,7 @@
         </code></pre>
         <!-- clustrmaps -->
         <div class="globe-container">
-        <script type="text/javascript" id="clstr_globe" width="100px" src="//clustrmaps.com/globe.js?d=1dJz619CGvbEoLM5B3ckFZrkoIWtApou5oQVot8EUTo"></script>
+        <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=xs3GwVq3n5Ni-wEpgR1ps2bdvnZRxEf4xhH_xDko6Js"></script>
         </div>  
       </div>
     </section>
